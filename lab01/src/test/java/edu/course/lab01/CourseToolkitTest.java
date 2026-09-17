@@ -22,6 +22,12 @@ class CourseToolkitTest {
     }
 
     @Test
+    void returnsTrueForZero() {
+        boolean result = CourseToolkit.isEven(0);
+        assertTrue(result);
+    }
+
+    @Test
     void returnsFalseForOne() {
         boolean result = CourseToolkit.isPrime(1);
         assertFalse(result);
