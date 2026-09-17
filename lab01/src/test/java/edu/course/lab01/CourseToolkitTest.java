@@ -20,4 +20,34 @@ class CourseToolkitTest {
 
         assertFalse(result);
     }
+
+    @Test
+    void returnsTrueForZero() {
+        boolean result = CourseToolkit.isEven(0);
+        assertTrue(result);
+    }
+
+    @Test
+    void returnsFalseForOne() {
+        boolean result = CourseToolkit.isPrime(1);
+        assertFalse(result);
+    }
+
+    @Test
+    void returnsFalseForTrirtySix() {
+        boolean result = CourseToolkit.isPrime(36);
+        assertFalse(result);
+    }
+
+    @Test
+    void returnsFalseForFortyNine() {
+        boolean result = CourseToolkit.isPrime(49);
+        assertFalse(result);
+    }
+
+    @Test
+    void returnsTrueForTwo() {
+        boolean result = CourseToolkit.isPrime(2);
+        assertTrue(result);
+    }
 }
